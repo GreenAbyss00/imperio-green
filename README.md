@@ -59,7 +59,8 @@ Todo está en `index.html`: estilos, iconos SVG y lógica.
 
 - **Tarjeta en la barra inferior:** borde grueso de color, degradado, ilustración SVG de 64×64, nombre en blanco con sombra y precio con moneda. Define su color con `.k-nombre{--c1;--c2;--bd}`.
 - **Edificio en el mapa:** contorno oscuro redondeado, sombra suave y círculo de tierra debajo (salvo caminos y puerto).
-- **Paleta:** hierba amarillo-verdosa, arena clara, piedra gris con bordes biselados, mar turquesa con patrón de rombos y espuma blanca.
+- **Paleta:** hierba amarillo-verdosa, arena clara, mar turquesa con patrón de rombos y espuma blanca.
+- **Roca:** el suelo rocoso es de losas irregulares en tonos marrón y beige (con grietas y manchas), y las plataformas elevadas son de losas gris oscuro biseladas. Las rocas picables son piedras con facetas, reflejos, musgo y guijarros alrededor, y encogen con cada golpe.
 - **Interfaz:** madera oscura con bordes dorados, barra de piedra con cápsulas oscuras e iconos grandes.
 
 ## Publicar con GitHub Pages
