@@ -18,7 +18,7 @@ Abre `index.html` en el navegador. No necesita servidor.
 
 ## Recursos
 
-Empiezas con **500 de oro** y **50 de comida**. Arriba se muestran oro, comida, madera, piedra, aldeanos (máx. 10), cuarteles y el tiempo hasta el próximo rebrote.
+Empiezas con **500 de oro** y **50 de comida**. Los recursos suben cuando el aldeano **entrega** la carga. Arriba se muestran oro, comida, madera, piedra, aldeanos (máx. 10), cuarteles y el tiempo hasta el próximo rebrote.
 
 ## Edificios
 
@@ -32,10 +32,14 @@ Empiezas con **500 de oro** y **50 de comida**. Arriba se muestran oro, comida, 
 | Casa vikinga | 90 oro | Produce un **aldeano vikingo** (25 comida, 4 s) |
 | Puerto | 120 oro | Solo en la costa. Un aldeano pesca: +6 comida cada 2,6 s |
 | Mina de oro | 150 oro | Solo en colinas. Un aldeano extrae: +10 oro cada 3,2 s |
+| Almacén | 70 oro | Punto de entrega: los aldeanos dejan aquí lo que recolectan (el Campamento y la Casa vikinga también sirven) |
 | Demoler | — | Devuelve el 50 % del oro |
 
 **Aldeanos:** tocar el edificio, producir, tocar al aldeano y luego tocar un árbol (+5 madera), una roca (+5 piedra), el puerto o la mina.
-Los árboles aguantan 3 golpes y las rocas 4. Cada 5 minutos el mapa repone árboles y rocas hasta la cantidad inicial.
+Los aldeanos **cargan** lo que recolectan (15 de madera o piedra, 18 de comida, 20 de oro) y lo llevan al punto de entrega más cercano; una barra sobre su cabeza muestra cuánto llevan. Después vuelven solos al trabajo. Si no tienen tarea y llevan carga, van a entregarla. Construir un almacén junto al bosque o la mina acorta los viajes.
+Los árboles aguantan 3 golpes y las rocas 4.
+
+**Caza:** con un aldeano seleccionado, toca una vaca o una oveja. El animal se marca con un aro rojo, el aldeano va hasta él y lo abate en 1,4 s. Da **12 de carne** (vaca) u **8** (oveja), que cuenta como comida y se entrega igual que lo demás. Cada animal **reaparece a los 3 minutos** en su zona de origen. Cada 5 minutos el mapa repone árboles y rocas hasta la cantidad inicial.
 
 ## Guardado
 
