@@ -15,6 +15,7 @@ Abre `index.html` en el navegador. No necesita servidor.
 | Construir | Tocar una tarjeta de la barra inferior y luego una casilla libre |
 | Salir del modo construir | Tocar la tarjeta otra vez, `Esc` o clic derecho |
 | Renombrar el reino | Tocar el nombre de arriba a la izquierda |
+| Ver qué hace un edificio | Pasar el cursor sobre su tarjeta (en móvil, tocarla): sale su descripción, precio y requisitos |
 
 ## Recursos
 
@@ -58,9 +59,11 @@ Todo está en `index.html`: estilos, iconos SVG y lógica.
 ### Guía de estilo para añadir cosas nuevas
 
 - **Tarjeta en la barra inferior:** borde grueso de color, degradado, ilustración SVG de 64×64, nombre en blanco con sombra y precio con moneda. Define su color con `.k-nombre{--c1;--c2;--bd}`.
+- **Descripción:** cada edificio tiene su texto en el objeto `INFO` (`d` = descripción, `r` = requisito opcional). Se muestra al pasar el cursor sobre la tarjeta.
 - **Edificio en el mapa:** contorno oscuro redondeado, sombra suave y círculo de tierra debajo (salvo caminos y puerto).
 - **Paleta:** hierba amarillo-verdosa, arena clara, mar turquesa con patrón de rombos y espuma blanca.
 - **Roca:** el suelo rocoso es de losas irregulares en tonos marrón y beige (con grietas y manchas), y las plataformas elevadas son de losas gris oscuro biseladas. Las rocas picables son piedras con facetas, reflejos, musgo y guijarros alrededor, y encogen con cada golpe.
+- **Diseño de edificios:** casas de madera con tejado de color propio (almacén naranja, casa vikinga marrón con escudos, puerto azul con muelle y bote), base de césped o arena, vallas bajas, farol, barril, caja y arbustos pequeños. Los accesorios van a escala reducida (`sc()`) para no tapar la casa.
 - **Interfaz:** madera oscura con bordes dorados, barra de piedra con cápsulas oscuras e iconos grandes.
 
 ## Publicar con GitHub Pages
