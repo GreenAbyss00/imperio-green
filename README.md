@@ -62,7 +62,7 @@ Todo está en `index.html`: estilos, iconos SVG y lógica.
 - **Descripción:** cada edificio tiene su texto en el objeto `INFO` (`d` = descripción, `r` = requisito opcional). Se muestra al pasar el cursor sobre la tarjeta.
 - **Edificio en el mapa:** contorno oscuro redondeado, sombra suave y círculo de tierra debajo (salvo caminos y puerto).
 - **Paleta:** hierba amarillo-verdosa, arena clara, mar turquesa con patrón de rombos y espuma blanca.
-- **Roca:** el suelo rocoso es de losas irregulares en tonos marrón y beige (con grietas y manchas), y las plataformas elevadas son de losas gris oscuro biseladas. Las rocas picables son piedras con facetas, reflejos, musgo y guijarros alrededor, y encogen con cada golpe.
+- **Roca:** el suelo rocoso es de losas irregulares en tonos marrón y beige (con grietas y manchas), y las plataformas elevadas son de losas gris oscuro biseladas. Las rocas picables tienen cuatro modelos que se reparten por el mapa: gris, marrón, gris con musgo y angulosa. Todas son facetadas, con contorno negro grueso, piedras pequeñas alrededor y matas de hierba detrás, y encogen con cada golpe.
 - **Diseño de edificios:** casas de madera con tejado de color propio (almacén naranja, casa vikinga marrón con escudos, puerto azul con muelle y bote), base de césped o arena, vallas bajas, farol, barril, caja y arbustos pequeños. Los accesorios van a escala reducida (`sc()`) para no tapar la casa.
 - **Interfaz:** madera oscura con bordes dorados, barra de piedra con cápsulas oscuras e iconos grandes.
 
