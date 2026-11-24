@@ -40,18 +40,21 @@ Empiezas con **500 de oro** y **50 de comida**. Los recursos suben cuando el ald
 Los aldeanos **cargan** lo que recolectan (15 de madera o piedra, 18 de comida, 20 de oro) y lo llevan al punto de entrega más cercano; una barra sobre su cabeza muestra cuánto llevan. Después vuelven solos al trabajo. Si no tienen tarea y llevan carga, van a entregarla. Construir un almacén junto al bosque o la mina acorta los viajes.
 Los árboles aguantan 3 golpes y las rocas 4.
 
+**Movimiento:** las unidades esquivan a las demás al calcular su ruta. Si se bloquean, esperan un instante y buscan otro camino; si no hay otro (por ejemplo, un pasillo de una casilla), pasan unos segundos a través de la otra unidad en vez de quedarse paradas. Si otro aldeano agota el árbol o la roca a la que iban, buscan el siguiente por su cuenta.
+
 **Caza:** con un aldeano seleccionado, toca una vaca o una oveja. El animal se marca con un aro rojo, el aldeano va hasta él y lo abate en 1,4 s. Da **12 de carne** (vaca) u **8** (oveja), que cuenta como comida y se entrega igual que lo demás. Cada animal **reaparece a los 3 minutos** en su zona de origen. Cada 5 minutos el mapa repone árboles y rocas hasta la cantidad inicial.
 
 ## Guardado
 
-Automático cada 10 segundos y al cerrar la pestaña, en `localStorage` (clave `imperio_save_v5`).
+Automático cada 10 segundos y al cerrar la pestaña, en `localStorage` (clave `imperio_save_v6`).
 El botón **Nueva partida** borra el guardado.
 
 ## Para desarrollar
 
 Todo está en `index.html`: estilos, iconos SVG y lógica.
 
-- `N` — tamaño del mapa (máximo 63).
+- `N` — tamaño del mapa (ahora 72; máximo 127).
+- `BSZ` — escala de dibujo de cada edificio. Solo se escala la casa; la base de césped y la sombra no, para que nada se salga de su casilla y lo tapen las casillas vecinas. Los accesorios del frente (valla, farol, barril) deben quedar dentro del rombo de la casilla.
 - `T` — catálogo de edificios; los iconos de las tarjetas están en `ICON`.
 - `PR` — edificios que producen aldeanos.
 - Si cambias la generación del terreno, **sube la versión de `KEY`** (`imperio_save_vN`) para no cargar partidas incompatibles.
