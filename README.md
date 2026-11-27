@@ -11,7 +11,8 @@ Abre `index.html` en el navegador. No necesita servidor.
 | --- | --- |
 | Interactuar | Tocar con el clic (edificios, aldeanos, árboles, rocas, puerto, mina) |
 | Mover el mapa | Arrastrar |
-| Zoom | Rueda del ratón |
+| Zoom | Rueda del ratón, pellizco con dos dedos, o los botones **+** y **−** del mapa (zoom de 0,2 a 2,2) |
+| Centrar la vista | Botón de la mira (◎) junto a los de zoom: vuelve al zoom inicial y centra tus edificios |
 | Construir | Tocar una tarjeta de la barra inferior y luego una casilla libre |
 | Salir del modo construir | Tocar la tarjeta otra vez, `Esc` o clic derecho |
 | Renombrar el reino | Tocar el nombre de arriba a la izquierda |
@@ -48,6 +49,14 @@ Los árboles aguantan 3 golpes y las rocas 4.
 
 Automático cada 10 segundos y al cerrar la pestaña, en `localStorage` (clave `imperio_save_v6`).
 El botón **Nueva partida** borra el guardado.
+
+## En móvil
+
+- El zoom inicial depende de la pantalla (0,5 en móviles, 0,8 en tabletas, 1 en ordenador) y se ajusta con el pellizco o los botones.
+- Un dedo arrastra el mapa y un toque corto interactúa o construye. Arrastrar con una herramienta activa **no** construye.
+- En pantallas bajas (móvil girado) las barras se compactan para dejar espacio al mapa.
+- `size()` guarda la altura de las barras en `--th` y `--dh` para colocar los avisos y la descripción sin taparlas.
+- Ningún elemento debe sobresalir del ancho de la pantalla: un adorno que se salga unos píxeles ensancha la página en móvil y desajusta el zoom.
 
 ## Para desarrollar
 
